@@ -10,11 +10,7 @@ Rails.application.routes.draw do
       delete 'delete-chat', to: 'messages#destroy_all'
     end
   end
-  mount ActionCable.server => "/cable"
-  mount ActionCable.server, at: '/users_cable' # User Channel URL
-  mount ActionCable.server, at: '/messages_cable' # Message Channel URL
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  mount ActionCable.server => '/cable'
+  mount ActionCable.server, at: '/users_cable'
+  mount ActionCable.server, at: '/messages_cable'
 end
