@@ -1,3 +1,5 @@
+require 'net/http'
+
 class KeepAliveJob < ApplicationJob
   queue_as :default
 
