@@ -17,6 +17,8 @@ gem "puma", "~> 5.0"
 # User sidekiq for async jobs
 gem 'sidekiq'
 
+gem 'sidekiq-cron'
+
 # Use Redis adapter to run Action Cable in production
  gem 'redis'
 
