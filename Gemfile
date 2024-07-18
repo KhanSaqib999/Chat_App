@@ -21,6 +21,8 @@ gem 'sidekiq-cron'
 
 gem 'rack-cors'
 
+gem 'sprockets-rails'
+
 # Use Redis adapter to run Action Cable in production
  gem 'redis'
 
